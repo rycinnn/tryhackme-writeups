@@ -6,7 +6,7 @@ This repo consists and is dedicated to my journey through each TryHackMe room I 
 
 | Room | Topics | Writeup |
 | ---- | ------ | ------- |
-| Snort | NIDS/NIPS, Traffic Analysis, Network Protection | [Room Link](./https://tryhackme.com/room/snort)   
+| Snort | NIDS/NIPS, Traffic Analysis, Network Protection | [View!](./tryhackme/soc1path/snort.md)   
 
 
 
