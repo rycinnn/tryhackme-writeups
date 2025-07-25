@@ -1,9 +1,12 @@
-Snort
----
+# Snort
+<img width="400" height="400" alt="snort" src="https://github.com/user-attachments/assets/f1ff3617-53f0-4412-821f-e4c790b50d6b" />
+
 *"Learn how to use Snort to detect real-time threats, analyse recorded traffic files and indentify anomalies"*
 
-Introduction:
----
+
+
+## Introduction:
+
   - Open-source NIDS/NIPS
   - Rule-based 
   - Contributers:
@@ -40,7 +43,8 @@ events/connections.
   - WIPS (Wireless Intrusion Prevention System): Actively monitors the flow of wireless traffic
   - HIPS (Host-Based Intrusion Prevention System): Actively monitors the flow of traffic from that of a single endpoint
 
-| Technique | Approach | 
+| Technique | Approach |
+| --------- | -------- |
 | Signature-Based | Based on pre-existing/document threats and malicious behaviors; compatible through SCAP |
 | Behavior-Based | Based on a given baseline and whatever outliars that may represent potentially malicious behavior(s) |
 | Policy-Based | Based on the comparison of detected events to that of implement configurations and policies; focuses on policy breaches |
@@ -52,10 +56,13 @@ Snort Use Models:
 *SNORT has cross-platform support
 
 -Debrief-
+
 Wow - that was a lot of information! Much of it I was familiar with, though a refresh like this is necessary. After the presentation of
 this information, a plethora of questions that query my IDS/IPS knowledge is given before I move onto the next task.
--------------
-#First Interaction with Snort
+
+---
+
+## First Interaction with Snort
 
 Showcasing Instance Version:
   - [snort -V] (version)
@@ -81,6 +88,44 @@ From there, we make of the new parameters/flags we learned to answer the given q
 
   - [Check how many rules are loaded with current build in /etc/snort/snortv2.conf]
     -[snort -c /etc/snort/snortv2.conf -T]
+
+---
+## Operation Mode 1: Sniffer Mode
+
+<img width="350" height="300" alt="packet sniffer snort" src="https://github.com/user-attachments/assets/dc4a17cf-c726-4b6d-96b9-62cab454cd36" />
+
+| Parameter/Flag | Description |
+| -------------- | ----------- |
+| -v | Stands for "verbose" - displays TCP/IP request and response in the console |
+| -d | Displays the data/packet payload | 
+| -e | Displays the packet headers (TCP/UDP/ICMP)
+| -X | Details full packet information in HEX format |
+| -i | Defines specific network interface to sniff/listen to | 
+| -de | Details data/packet payloads as well as data-link headers | 
+
+---
+## Operation Mode 2: Packet Logger Mode
+
+| Parameter | Description |
+| --------- | ----------- |
+| -l | Describes logger mode - outputs logs in /var/log/snort |
+| -K ASCII | States to write in ASCII format |
+| -r | Reads logs | 
+| -n | Specifies the amount of packets to be read | 
+
+*Somewhat like a pcap tools but rather for a specific moment in time - somewhat like a screenshot. 
+Usually dependent on something like a rule getting set off in a .conf file and then formatted in a text or
+custom alert format.
+
+
+
+
+
+
+
+
+
+
 
 
   
