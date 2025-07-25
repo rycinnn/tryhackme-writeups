@@ -1,7 +1,9 @@
-                                                              #Snort
+Snort
+---
 *"Learn how to use Snort to detect real-time threats, analyse recorded traffic files and indentify anomalies"*
-------------
-#Introduction:
+
+Introduction:
+---
   - Open-source NIDS/NIPS
   - Rule-based 
   - Contributers:
@@ -9,8 +11,8 @@
     - Open-source contributors
     - Cisco Talos
 -------------
-#Interactive Material and VM
-
+Interactive Material and VM
+---
 This task opens with immediately with an Ubuntu-based Linux virtual machine. An otherwise barren desktop contains a folder - "Task-Exercises"
 in which contains sample configuration and exercises folders - much of attention being directed at the ladder. 
 
@@ -21,9 +23,10 @@ From here we're seemingly able to generate traffic as-necessary with our given t
 prints traffic, in this case ICMP logs 
 
 From there, we're asked to run "./.easy.sh" in the [Task-Exercises] directory - the output allows us to move onto the next task
--------------
-#Introduction to IDS/IPS
 
+---
+Introduction to IDS/IPS
+---
 IDS (Intrusion Detection System): Passive detection/monitoring solution that generates alerts based off signatures, anamolies; behaviors.
   - NIDS (Network Intrusion Detection System): Monitors the flow of traffic within a given subnet
   - HIDS (Host Intrusion Detection System): Monitors the flow of traffic from that of a single endpoint 
